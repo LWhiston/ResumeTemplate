@@ -13,10 +13,15 @@ export const MainBullet = ({
 }: Props) => (
   <View style={{ marginLeft: "0.125in" }}>
     <Text
-      style={{ fontSize: "12px", fontStyle: primaryBold ? "bold" : undefined }}
+      style={{
+        fontSize: "12px",
+        fontFamily: primaryBold ? "Times-Bold" : undefined,
+      }}
     >
       {primary}
     </Text>
-    <Text style={{ fontSize: "12px", fontStyle: "italic" }}>{secondary}</Text>
+    <Text style={{ fontSize: "12px", fontFamily: "Times-Italic" }}>
+      {secondary}
+    </Text>
   </View>
 );

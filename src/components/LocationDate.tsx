@@ -11,9 +11,12 @@ export const LocationDates = ({ location, dates }: Props) => (
       textAlign: "right",
       fontSize: "12px",
       flexGrow: 1,
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "flex-end",
     }}
   >
     <Text>{location}</Text>
-    <Text style={{ fontStyle: "italic" }}>{dates}</Text>
+    <Text style={{ fontFamily: "Times-Italic" }}>{dates}</Text>
   </View>
 );

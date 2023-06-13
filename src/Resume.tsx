@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     padding: "0.5in",
     flexDirection: "column",
     display: "flex",
-    fontFamily: "Roboto",
+    fontFamily: "Times-Roman",
   },
 });
 

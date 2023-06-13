@@ -8,7 +8,7 @@ type Props = {
 
 export const Header = ({ name, contactInfo }: Props) => (
   <Row>
-    <View style={{ fontSize: "16px", fontStyle: "bold" }}>
+    <View style={{ fontSize: "16px", fontFamily: "Times-Bold" }}>
       <Text>{name}</Text>
     </View>
     <View
@@ -16,6 +16,9 @@ export const Header = ({ name, contactInfo }: Props) => (
         textAlign: "right",
         fontSize: "12px",
         flexGrow: 1,
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "flex-end",
       }}
     >
       {contactInfo.map((contactLine) => (
